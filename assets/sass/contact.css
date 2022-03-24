@@ -55,6 +55,9 @@ a {
 }
 
 @media (max-width: 575px) {
+  header {
+    height: 20vh !important;
+  }
   .nav-links {
     -webkit-box-pack: center !important;
         -ms-flex-pack: center !important;
@@ -85,6 +88,58 @@ a {
   .all {
     padding-top: 1rem !important;
   }
+  .about {
+    height: auto !important;
+  }
+  .about .txt {
+    width: 90% !important;
+  }
+  .about .txt p {
+    font-size: 1.1rem !important;
+  }
+  .about .txt h1 {
+    font-size: 6rem !important;
+  }
+  .icons {
+    height: 17vh !important;
+  }
+  .icons .icon {
+    width: 45% !important;
+    -webkit-box-pack: justify !important;
+        -ms-flex-pack: justify !important;
+            justify-content: space-between !important;
+  }
+  footer {
+    height: 17vh !important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .alt-img img {
+    width: 55%;
+    height: 18%;
+  }
+  .nav-links a {
+    font-size: 1.4rem !important;
+  }
+  .all {
+    padding-top: 1rem !important;
+  }
+  .about {
+    height: auto !important;
+  }
+  .about .contact-img {
+    height: auto !important;
+  }
+  .about .contact-img .txt {
+    width: 70% !important;
+  }
+  .about .contact-img .txt p {
+    font-size: 1.2rem !important;
+  }
+  .about .contact-img .txt h1 {
+    font-size: 9rem !important;
+  }
   .icon {
     width: 45% !important;
     -webkit-box-pack: justify !important;
@@ -93,18 +148,21 @@ a {
   }
 }
 
-@media (min-width: 576px) and (max-width: 767px) {
-  header .nav-links ul a {
-    font-size: 1.2rem !important;
-    letter-spacing: 1px !important;
-    padding-bottom: 8px !important;
+@media (min-width: 768px) and (max-width: 1060px) {
+  .about {
+    height: auto !important;
   }
-  header .alt-img img {
-    width: 43%;
-    height: 18%;
+  .about .contact-img {
+    height: auto !important;
   }
-  .slider .all {
-    padding-top: 1rem !important;
+  .about .contact-img .txt {
+    width: 70% !important;
+  }
+  .about .contact-img .txt p {
+    font-size: 1.7rem !important;
+  }
+  .about .contact-img .txt h1 {
+    font-size: 11rem !important;
   }
 }
 
@@ -175,7 +233,7 @@ header .alt-header .nav-links {
 }
 
 header .alt-header .nav-links ul {
-  width: 90%;
+  width: 100%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,7 +270,15 @@ header .alt-header .nav-links ul li a:hover {
   border-bottom-color: #686458;
 }
 
-.slider {
+.about {
+  height: 80vh;
+  margin-top: 5rem;
+}
+
+.about .contact-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -228,48 +294,49 @@ header .alt-header .nav-links ul li a:hover {
           align-items: center;
 }
 
-.slider .all {
-  height: 90%;
-  padding-top: 11rem;
-  padding-bottom: 11rem;
-  border-bottom: 1px solid #262420;
-}
-
-.slider .all .item {
-  position: relative;
-  cursor: pointer;
-  padding: 3px;
-}
-
-.slider .all .item:hover .item-alt {
-  opacity: 1;
-}
-
-.slider .all .item .item-alt {
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 3px;
+.about .contact-img .cntcimg {
   width: 100%;
   height: 100%;
-  opacity: 0;
-  -webkit-transition: all .3s;
-  transition: all .3s;
 }
 
-.slider .all .item .line-top {
-  background: #262420;
-  border-left: 1px solid #b7b09b;
-  border-right: 1px solid #b7b09b;
-  height: 1px;
-  width: 100%;
-  margin: 5px 0;
+.about .contact-img .txt {
+  width: 70%;
+  height: 60%;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #ddd4bb;
+  background-color: transparent;
+}
+
+.about .contact-img .txt p {
+  font-size: 1.8rem;
+  background-color: transparent;
+}
+
+.about .contact-img .txt h1 {
+  font-size: 23rem;
+  font-weight: bolder;
+  background-color: transparent;
 }
 
 .icons {
   height: 26vh;
   border-bottom: 1px solid #262420;
+  border-top: 1px solid #262420;
   width: 100%;
+  margin-top: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,4 +397,4 @@ footer p {
   font-size: 1.3rem;
   color: #3b3932;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=contact.css.map */
